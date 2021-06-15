@@ -17,7 +17,6 @@ const sphereColor = (currentSphere) => {
     }
   }
 };
-
 rightArrow.addEventListener('click', () => {
   if (img[currentImage].style.display === 'block' && img[currentImage + 1] !== undefined) {
     // se borra imagen actual
