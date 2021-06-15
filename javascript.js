@@ -8,11 +8,11 @@ img[0].style.display = 'block';
 let currentImage = 0;
 // selecciona node esfera, y agrega class a esfera seleccionada
 // borra class de todas las esferas distintas
-const sphereColor = (i) => {
+const sphereColor = (currentSphere) => {
   const sphere = document.querySelectorAll('.sphere');
-  sphere[i].classList.add('sphereClicked');
+  sphere[currentSphere].classList.add('sphereClicked');
   for (let j = 0; j < sphere.length; j += 1) {
-    if (sphere[i] !== sphere[j]) {
+    if (sphere[currentSphere] !== sphere[j]) {
       sphere[j].classList.remove('sphereClicked');
     }
   }
