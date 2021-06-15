@@ -58,3 +58,7 @@ for (let i = 0; i < img.length; i += 1) {
   spheresContainer.appendChild(sphere);
 }
 sphereColor(0);
+
+setInterval(() => {
+  rightArrow.click();
+}, 4000);

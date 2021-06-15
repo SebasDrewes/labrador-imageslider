@@ -1,9 +1,14 @@
 html, body {
     height: 100%;
+    font-family: Arial;
+    background: linear-gradient(#dff7ff, #ddfce4);
 }
 @keyframes fadeIn {
     from { opacity: 0; }
       to { opacity: 1; }
+}
+#title {
+    text-align: center;
 }
 .container {
     position: relative;
@@ -52,7 +57,7 @@ background-color: rgba(0, 0, 0, 0.5);
     display: flex;
     margin: auto;
     margin-top: 5vh;
-    margin-bottom: 5vh;
+    margin-bottom: 1vh;
     width: auto;
     height: 5%;
     align-items: center;
