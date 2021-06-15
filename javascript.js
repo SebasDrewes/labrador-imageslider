@@ -20,14 +20,20 @@ const sphereColor = (i) => {
 
 rightArrow.addEventListener('click', () => {
   if (img[currentImage].style.display === 'block' && img[currentImage + 1] !== undefined) {
+    // se borra imagen actual
     img[currentImage].style.display = 'none';
+    // se agrega siguiente imagen del node
     img[currentImage + 1].style.display = 'block';
     currentImage += 1;
+    // se pinta esfera actual
     sphereColor(currentImage);
+    // si currentImage es superior a total de elementos node, reincia display.
   } else {
     img[0].style.display = 'block';
+    // al ultimo element, se borra de display
     img[img.length - 1].style.display = 'none';
     currentImage = 0;
+    // se pinta esfera actual
     sphereColor(currentImage);
   }
 });
